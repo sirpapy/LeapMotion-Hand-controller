@@ -17,10 +17,8 @@ public class Automate
   
   private int etati;//etat dans lequel est l'automate
    
-
   public Automate(String A,int e[],int f[],List<Transition> delta)
   {
-	  
     this.A=A;
     this.e=e;
     this.ei=0;
@@ -35,6 +33,7 @@ public class Automate
   
   public int[] getEtat()
   {
+    
     return e;
   }
    
@@ -47,6 +46,13 @@ public class Automate
   {
     return delta;
   }
+  
+  /*@Override
+  public String toString()
+  {
+    
+  }
+  */
   
   /*public boolean ifInAlphabet(String s)
   {
@@ -65,6 +71,10 @@ public class Automate
     return true;
   }*/
   
+  /*void addTransistion(Transition T)
+  {
+    delta.add
+  }*/
   public static void main(String []args)
   {
 	 String alphab="ab";
@@ -79,10 +89,11 @@ public class Automate
 	 
 	 Automate a = new Automate(alphab,etat,etatF,transition);
      
-     System.out.println(a.getAlphabet());
-     System.out.println(a.getEtat());
-     System.out.println(a.getEtatsFinaux());
-     System.out.println(a.getTransition());
+   System.out.println(a.getAlphabet());
+   System.out.println(a.getEtat());
+   System.out.println(a.getEtatsFinaux());
+   System.out.println(a.getTransition());
+   
      
   }
 }
