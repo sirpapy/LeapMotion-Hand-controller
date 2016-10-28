@@ -43,7 +43,7 @@ class MouseListener extends Listener {
 		Frame frame = c.frame();
 		InteractionBox box = frame.interactionBox();
 		for (Finger f : frame.fingers()) {
-			//System.out.println("Vous avez montrés " + f_ext_count	+ " doigt(s) extended");
+			//System.out.println("Vous avez montrÃ©s " + f_ext_count	+ " doigt(s) extended");
 			if (f.isExtended() == true) {
 				f_ext_count++;
 				f_ext_id = f.id();
@@ -79,7 +79,7 @@ class MouseListener extends Listener {
 		} else {
 			for (Gesture g : frame.gestures()) {
 				/*
-				 * ZZZZZZZZZZZZZOOOOOOOOOOOOMMMMMMMMMMM
+				 * ZOOM
 				 */
 				if ((frame.hands().count() == 2)
 						) {
@@ -109,7 +109,7 @@ class MouseListener extends Listener {
 
 				}
 
-				/* FIN ZOOMMMMMMMMMMMMMMMMMMMMMMMMMMM */
+				/* FIN ZOOM */
 
 				if (g.type() == Type.TYPE_CIRCLE) {
 					CircleGesture circle = new CircleGesture(g);
